@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditions exercise on js </title>
+    <style>
+        body{
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>System of fines</h1>
+    <p>
+        Car Speed:
+        <input type="number" name="vel" id="vel">
+        km/h
+        <input type="button" value="Check" onclick="calcular()">
+    </p>
+    <div id="result">
+
+    </div>
+
+    <script>
+        function calcular(){
+            var vel = window.document.getElementById('vel')
+            var result = window.document.getElementById('result')
+            var v = Number(vel.value)
+            result.innerHTML =`<p>Your final speed is <strong>${v}km/h.</strong></p>` 
+            if (v >= 70){
+                result.innerHTML += `<p>Your car's speed is exceeding the road limits. You were fined.</p>`
+            }
+            else{
+                result.innerHTML += `<p>Drive with security.</p>`
+            }
+        }
+    </script>
+</body>
+</html>
