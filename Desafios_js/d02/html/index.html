@@ -3,10 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    
+<body onload="verificar()">
+    <header>
+        <h1>Age checker</h1>
+    </header>
+    <section>
+        <div class="dados">
+            <p>Year of Born: 
+                <input type="number" name="year" id="year" min="0">
+            </p>
+            <p> Sex:
+                <input type="radio" name="sex" id="mas">
+                <label for="mas">Masculine</label>
+                <input type="radio" name="sex" id="fem" checked>
+                <label for="fem">Feminine</label>
+            </p>
+            <p>
+                <input class="btn" type="button" value="Check" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Enter the data above to see the result. 
+        </div>
+    </section>
+
+    <footer>
+        <p>July,25,2023.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
