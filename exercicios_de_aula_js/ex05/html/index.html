@@ -8,18 +8,19 @@
 </head>
 <body>
     <header>
-        <h1>Lets count</h1>
+        <h1>Multiplication Table </h1>
     </header>
     <section>
         <div id="dados">
-            <p>Start: <input type="number" name="inicio" id="txti"></p>
-            <p>End: <input type="number" name="fim" id="txtf"></p>
-            <p>Pass: <input type="number" name="passo" id="txtp"></p>
-            <p>
-                <input type="button" value="Count" onclick="calcular()">
+            <p>Primeiro número: 
+                <input type="number" name="num" id="txtn">
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()">
             </p>
-            <div id="res">
-                Preparing count...
+
+            <div>
+                <select name="tabuada" id="tab" size="10">
+                    <option value="opt">Inform a number</option>
+                </select>
             </div>
         </div>
     </section>
