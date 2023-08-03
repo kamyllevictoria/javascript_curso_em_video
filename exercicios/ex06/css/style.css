@@ -1,0 +1,51 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+body{
+    background-color: lightblue;
+}
+
+
+header h1{
+    text-align: center;
+    font-size: 30px;
+}
+#dados{
+    margin: 20px auto;
+    background-color: white;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.318);
+    
+}
+select#flista{
+    width: 100px;
+    margin: 20px 0px 0px 0px;
+}
+
+select{
+    padding: 10px;
+}
+
+div#dados p{
+    margin-left: 20px;
+}
+
+p{
+    padding: 10px;
+}
+
+input{
+    width: 90px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+footer{
+    text-align: center;
+}
